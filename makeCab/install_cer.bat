@@ -1,0 +1,1 @@
+certmgr /c /add fq.cer /s root

@@ -1,0 +1,48 @@
+﻿Build started 2017/8/31 9:45:59.
+Project "C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\SimpleActiveX\SimpleActiveX.vcxproj" on node 2 (Rebuild target(s)).
+Midl:
+  C:\Program Files (x86)\Windows Kits\8.0\bin\x86\midl.exe /D NDEBUG /W1 /nologo /char signed /env win32 /h "SimpleActiveXidl.h" /tlb "Release\SimpleActiveX.tlb" /robust SimpleActiveX.idl 
+  Processing .\SimpleActiveX.idl
+  SimpleActiveX.idl
+  oaidl.idl
+  objidl.idl
+  unknwn.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\objidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\unknwn.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypesbase.idl
+  wtypesbase.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.acf
+  oaidl.acf
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\SimpleActiveX.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+  stdafx.cpp
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\SimpleActiveX.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt SimpleActiveX.cpp SimpleActiveXCtrl.cpp SimpleActiveXPropPage.cpp
+  SimpleActiveX.cpp
+  SimpleActiveXCtrl.cpp
+  SimpleActiveXPropPage.cpp
+ResourceCompile:
+  C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IRelease\ /nologo /fo"Release\SimpleActiveX.res" SimpleActiveX.rc 
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\Release\SimpleActiveX.ocx" /INCREMENTAL:NO /NOLOGO /DEF:".\SimpleActiveX.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\Release\SimpleActiveX.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\Release\SimpleActiveX.lib" /MACHINE:X86 /SAFESEH /DLL Release\SimpleActiveX.res
+  Release\SimpleActiveX.obj
+  Release\SimpleActiveXCtrl.obj
+  Release\SimpleActiveXPropPage.obj
+  Release\stdafx.obj
+     Creating library C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\Release\SimpleActiveX.lib and object C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\Release\SimpleActiveX.exp
+  Generating code
+  Finished generating code
+  SimpleActiveX.vcxproj -> C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\Release\SimpleActiveX.ocx
+RegisterOutput:
+  regsvr32 /s "C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\Release\SimpleActiveX.ocx"
+Done Building Project "C:\Users\vm-win7x64\Desktop\MFC-TEST\SimpleActiveX\SimpleActiveX\SimpleActiveX\SimpleActiveX.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.01

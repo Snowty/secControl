@@ -1,0 +1,14 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+SimpleActiveX.ocx=SimpleActiveX.ocx
+
+[SimpleActiveX.ocx]
+file-win32-x86=thiscab
+clsid={24695D2D-0C9C-460B-84D6-41C39507DFDD}
+FileVersion=1,0,0,1
+RegisterServer=yes
+DestDir=11
+

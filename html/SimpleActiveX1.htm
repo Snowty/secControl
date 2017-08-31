@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<TITLE>SimpleActiveX</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+function PassParameter()
+{
+	if(StringInput.value != " ")
+	{
+		SimpleActiveX1.InputParameter = StringInput.value;
+		SimpleActiveX1.LoadParameter();
+	}
+}
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<center>
+SimpleActiveX
+<p></p>
+
+
+<OBJECT ID="SimpleActiveX1" WIDTH=350 HEIGHT=50
+ CLASSID="CLSID:24695D2D-0C9C-460B-84D6-41C39507DFDD"
+ CODEBASE="SimpleActiveX.cab#version=1,0,0,1">
+    <PARAM NAME="_Version" VALUE="65536">
+    <PARAM NAME="_ExtentX" VALUE="2646">
+    <PARAM NAME="_ExtentY" VALUE="1323">
+    <PARAM NAME="_StockProps" VALUE="0">
+</OBJECT>
+
+<p></p>
+Input username: <INPUT ID="username" TYPE="text" ><br>
+Input password: <INPUT ID="pass" TYPE="password" NAME="StringInput" >
+<p></p>
+<INPUT TYPE="button" NAME="Submit" VALUE = "Submit" ONCLICK=PassParameter()>
+
+
+<!--ÅÐ¶Ï¿Ø¼þÊÇ·ñ´æÔÚ-->
+<script> 
+if(document.all.SimpleActiveX1.object == null) 
+{
+	var form = document.getElementById("pass");
+	form.disabled = true;
+	alert("please install the control!");
+}
+else
+	alert("OK!");
+</script>
+
+
+
+<SCRIPT FOR=SimpleActiveX1 EVENT=ParameterLoaded()>
+<!--{
+	window.document.write("The parameter you enter is:<br>"
+					+SimpleActiveX1.OutputParameter + " ")
+-->
+
+</SCRIPT>
+
+</BODY>
+</HTML>

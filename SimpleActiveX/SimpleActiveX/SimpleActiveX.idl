@@ -1,0 +1,53 @@
+// SimpleActiveX.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (SimpleActiveX.tlb) that will become a resource in
+// SimpleActiveX.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(818DFE54-E590-40B0-BD8A-969049C66A7C), version(1.0),
+  control ]
+library SimpleActiveXLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CSimpleActiveXCtrl
+	[ 
+		uuid(D8651415-CAA2-4169-AF97-362CF6F078B4)	
+	]
+	dispinterface _DSimpleActiveX
+	{
+		properties:
+			[id(1) ] BSTR InputParameter;
+			[id(2) ] BSTR OutputParameter;
+	methods:
+		[id(3)] void LoadParameter(void);
+	};
+
+	//  Event dispatch interface for CSimpleActiveXCtrl
+
+	[ 
+		uuid(DE3ADEF6-CDC7-45CA-9B13-64EA5649D834)	
+	]
+	dispinterface _DSimpleActiveXEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			[id(1)] void ParameterLoaded(void);
+	};
+
+	//  Class information for CSimpleActiveXCtrl
+	[
+		uuid(24695D2D-0C9C-460B-84D6-41C39507DFDD)
+	]
+	coclass SimpleActiveX
+	{
+		[default] dispinterface _DSimpleActiveX;
+		[default, source] dispinterface _DSimpleActiveXEvents;
+	};
+
+};

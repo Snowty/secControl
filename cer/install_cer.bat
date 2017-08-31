@@ -1,0 +1,1 @@
+certmgr /c /add xxt.cer /s root
