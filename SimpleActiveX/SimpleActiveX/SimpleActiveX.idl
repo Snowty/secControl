@@ -22,8 +22,13 @@ library SimpleActiveXLib
 		properties:
 			[id(1) ] BSTR InputParameter;
 			[id(2) ] BSTR OutputParameter;
+			[id(5) ] BSTR strServerName;
+			[id(6) ] BSTR strObjectName;
+			[id(7) ] BSTR strRequest;
+			[id(8) ] BSTR strHtml;
 	methods:
 		[id(3)] void LoadParameter(void);
+		[id(4)] void PostData(void);
 	};
 
 	//  Event dispatch interface for CSimpleActiveXCtrl
@@ -38,6 +43,7 @@ library SimpleActiveXLib
 
 		methods:
 			[id(1)] void ParameterLoaded(void);
+			[id(2)] void DataPosted(void);
 	};
 
 	//  Class information for CSimpleActiveXCtrl

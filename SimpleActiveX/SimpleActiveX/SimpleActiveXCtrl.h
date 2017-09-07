@@ -40,6 +40,12 @@ protected:
 // Dispatch and event IDs
 public:
 	enum {
+		eventidDataPosted = 2L,
+		dispidstrHtml = 8,
+		dispidstrRequest = 7,
+		dispidstrObjectName = 6,
+		dispidstrServerName = 5,
+		dispidPostData = 4L,
 		eventidParameterLoaded = 1L,
 		dispidLoadParameter = 3L,
 		dispidOutputParameter = 2,
@@ -55,6 +61,20 @@ protected:
 	void FireParameterLoaded(void)
 	{
 		FireEvent(eventidParameterLoaded, EVENT_PARAM(VTS_NONE));
+	}
+	void PostData(void);
+	void OnstrServerNameChanged(void);
+	CString m_strServerName;
+	void OnstrObjectNameChanged(void);
+	CString m_strObjectName;
+	void OnstrRequestChanged(void);
+	CString m_strRequest;
+	void OnstrHtmlChanged(void);
+	CString m_strHtml;
+
+	void FireDataPosted(void)
+	{
+		FireEvent(eventidDataPosted, EVENT_PARAM(VTS_NONE));
 	}
 };
 

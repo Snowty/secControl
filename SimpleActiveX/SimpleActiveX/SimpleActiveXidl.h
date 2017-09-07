@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 8.00.0595 */
-/* at Thu Aug 31 09:45:59 2017
+/* at Thu Sep 07 11:12:53 2017
  */
 /* Compiler settings for SimpleActiveX.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0595 
